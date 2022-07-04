@@ -1,0 +1,410 @@
+{
+  "contractName": "ISingleDron",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.1+commit.c8a2cb62\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/usuario/tfe/fumdapp/src/contracts/ISingleDron.sol\":\"ISingleDron\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/usuario/tfe/fumdapp/src/contracts/ISingleDron.sol\":{\"keccak256\":\"0x456234ae8863a4d616463e12a2fefffca58cd6fe3c5e9384566933081352018e\",\"urls\":[\"bzzr://c14377ccfa0718667a580d08d49f2730256c2eb1410cc48f83e9ea1d4db86cd1\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3fe6080604052600080fdfea165627a7a72305820cf46dc45f799cdbcde288ee0ac799263f1aef834ffa1759914ede009cb0260b30029",
+  "deployedBytecode": "0x6080604052600080fdfea165627a7a72305820cf46dc45f799cdbcde288ee0ac799263f1aef834ffa1759914ede009cb0260b30029",
+  "sourceMap": "59:183:13:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;59:183:13;;;;;;;",
+  "deployedSourceMap": "59:183:13:-;;;;;",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.5.0;\n\n\ninterface ISingleDron {\n    struct properties{\n        uint256 max_Height;\n        uint256 min_Height;\n        uint256 cost;\n        uint8[] pesticides;\n        address owner;\n    }\n}",
+  "sourcePath": "/home/usuario/tfe/fumdapp/src/contracts/ISingleDron.sol",
+  "ast": {
+    "absolutePath": "/home/usuario/tfe/fumdapp/src/contracts/ISingleDron.sol",
+    "exportedSymbols": {
+      "ISingleDron": [
+        2773
+      ]
+    },
+    "id": 2774,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2760,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:24:13"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 2773,
+        "linearizedBaseContracts": [
+          2773
+        ],
+        "name": "ISingleDron",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "ISingleDron.properties",
+            "id": 2772,
+            "members": [
+              {
+                "constant": false,
+                "id": 2762,
+                "name": "max_Height",
+                "nodeType": "VariableDeclaration",
+                "scope": 2772,
+                "src": "114:18:13",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 2761,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "114:7:13",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 2764,
+                "name": "min_Height",
+                "nodeType": "VariableDeclaration",
+                "scope": 2772,
+                "src": "142:18:13",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 2763,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "142:7:13",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 2766,
+                "name": "cost",
+                "nodeType": "VariableDeclaration",
+                "scope": 2772,
+                "src": "170:12:13",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 2765,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "170:7:13",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 2769,
+                "name": "pesticides",
+                "nodeType": "VariableDeclaration",
+                "scope": 2772,
+                "src": "192:18:13",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_uint8_$dyn_storage_ptr",
+                  "typeString": "uint8[]"
+                },
+                "typeName": {
+                  "baseType": {
+                    "id": 2767,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "192:5:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "id": 2768,
+                  "length": null,
+                  "nodeType": "ArrayTypeName",
+                  "src": "192:7:13",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint8_$dyn_storage_ptr",
+                    "typeString": "uint8[]"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 2771,
+                "name": "owner",
+                "nodeType": "VariableDeclaration",
+                "scope": 2772,
+                "src": "220:13:13",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 2770,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "220:7:13",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "properties",
+            "nodeType": "StructDefinition",
+            "scope": 2773,
+            "src": "87:153:13",
+            "visibility": "public"
+          }
+        ],
+        "scope": 2774,
+        "src": "59:183:13"
+      }
+    ],
+    "src": "32:210:13"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/usuario/tfe/fumdapp/src/contracts/ISingleDron.sol",
+    "exportedSymbols": {
+      "ISingleDron": [
+        2773
+      ]
+    },
+    "id": 2774,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2760,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:24:13"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 2773,
+        "linearizedBaseContracts": [
+          2773
+        ],
+        "name": "ISingleDron",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "ISingleDron.properties",
+            "id": 2772,
+            "members": [
+              {
+                "constant": false,
+                "id": 2762,
+                "name": "max_Height",
+                "nodeType": "VariableDeclaration",
+                "scope": 2772,
+                "src": "114:18:13",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 2761,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "114:7:13",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 2764,
+                "name": "min_Height",
+                "nodeType": "VariableDeclaration",
+                "scope": 2772,
+                "src": "142:18:13",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 2763,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "142:7:13",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 2766,
+                "name": "cost",
+                "nodeType": "VariableDeclaration",
+                "scope": 2772,
+                "src": "170:12:13",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 2765,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "170:7:13",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 2769,
+                "name": "pesticides",
+                "nodeType": "VariableDeclaration",
+                "scope": 2772,
+                "src": "192:18:13",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_uint8_$dyn_storage_ptr",
+                  "typeString": "uint8[]"
+                },
+                "typeName": {
+                  "baseType": {
+                    "id": 2767,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "192:5:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "id": 2768,
+                  "length": null,
+                  "nodeType": "ArrayTypeName",
+                  "src": "192:7:13",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint8_$dyn_storage_ptr",
+                    "typeString": "uint8[]"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 2771,
+                "name": "owner",
+                "nodeType": "VariableDeclaration",
+                "scope": 2772,
+                "src": "220:13:13",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 2770,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "220:7:13",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "properties",
+            "nodeType": "StructDefinition",
+            "scope": 2773,
+            "src": "87:153:13",
+            "visibility": "public"
+          }
+        ],
+        "scope": 2774,
+        "src": "59:183:13"
+      }
+    ],
+    "src": "32:210:13"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.1+commit.c8a2cb62.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.9",
+  "updatedAt": "2022-06-30T21:35:31.252Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
